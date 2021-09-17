@@ -3,7 +3,7 @@ import Layout from "../components/template/Layout";
 export default function Home() {
   return (
     <div>
-      <Layout titulo="Página Inicial" subtitulo="Estamos construindo">
+      <Layout titulo="Notificações" subtitulo="Aqui você irá gerenciar as suas notificações ">
         Conteúdo
       </Layout>
     </div>
