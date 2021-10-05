@@ -10,14 +10,14 @@ interface AppContextProps {
 const AppContext = createContext<AppContextProps>({} as AppContextProps);
 
 export function AppProvider(props) {
-    const [theme, setTheme] = useState<Tema>('');
+    const [theme, setTheme] = useState<Tema>('dark');
     const changeTheme = () => {
         setTheme(theme === '' ? 'dark' : '')
     }
 
     return (
         <AppContext.Provider value={{
-            theme: 'dark',
+            theme,
             changeTheme        
         }}>
             {props.children}
